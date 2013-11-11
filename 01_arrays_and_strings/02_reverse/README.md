@@ -1,5 +1,5 @@
 # Challenge 1
-Paulina
+Paulina  
 Oct 13, 2013
 
 
