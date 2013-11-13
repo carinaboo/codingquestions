@@ -29,4 +29,4 @@ The difference of min depth and max depth should not exceed 1, since the differe
 	}
 ```
 
-![alt text](https://raw.github.com/carinaboo/codingquestions/master/04_trees_and_graphs/isBalanced/unbalanced_tree.png "unbalanced tree, depth different is > 1")
+![alt text](https://raw.github.com/carinaboo/codingquestions/master/04_trees_and_graphs/isBalanced/unbalanced_tree.png?token=822291__eyJzY29wZSI6IlJhd0Jsb2I6Y2FyaW5hYm9vL2NvZGluZ3F1ZXN0aW9ucy9tYXN0ZXIvMDRfdHJlZXNfYW5kX2dyYXBocy9pc0JhbGFuY2VkL3VuYmFsYW5jZWRfdHJlZS5wbmciLCJleHBpcmVzIjoxMzg0OTQzOTI0fQ%3D%3D--989e73548ea621477727f5dbefcaaa8a0b0ca8c5 "unbalanced tree, depth different is > 1")
