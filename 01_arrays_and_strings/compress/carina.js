@@ -25,3 +25,5 @@ var compress = function(string) {
 };
 
 compress("aabcccccaaa"); // "a2b1c5a3"
+compress(""); // ""
+compress("a"); // "a1"
