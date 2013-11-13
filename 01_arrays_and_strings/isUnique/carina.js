@@ -4,7 +4,7 @@
 
 function isUnique(str) {
 	str = str.toLowerCase();
-	var charArr = new Array(26); // if it wasn't just the alphabet, then use Array(256)
+	var charArr = new Array(26); // if it wasn't just the 26 chars in alphabet, use Array(256)
 	for (var i = 0; i < str.length; i++) {
 		var index = str.charCodeAt(i) - 97;
 
