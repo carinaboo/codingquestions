@@ -8,6 +8,7 @@ Implement a function void reverse(char* str) in C or C++ which reverses a null-t
 
 
 ## Solution
+This is a classic interview question The only “gotcha” is to try to do it in place, and to be care- ful for the null character
 ```c
 	void reverse(char *str) {
 		char *end = str;
