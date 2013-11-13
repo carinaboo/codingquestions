@@ -6,9 +6,9 @@
 var compress = function(string) {
 	var compressedString = "";
 	if (string.length > 0) {
-		var currChar = string.charAt(0),
+		var currChar = string.charAt(0), // current char we are keeping a count for
 			nextChar = "",
-			charCount = 1; // count of currChar
+			charCount = 1; 
 		for (var i=1, length=string.length; i < length; i++) {
 			nextChar = string.charAt(i);
 			if (nextChar != currChar) {
