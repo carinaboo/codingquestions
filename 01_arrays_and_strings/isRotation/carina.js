@@ -9,7 +9,10 @@ var isSubstring = function(s1, s2) {
 };
 
 var isRotation = function(s1, s2) {
-// doesn't take advantage of isSubstring yet
+// quick checks: are lengths equal, are strings the same (==)
+// compares each char of s1 to the first char of s2 until if finds a matching char
+// once it finds a matching char, checks the rest until s1.length to see if rest matches beginning of s2
+// if rest matches, then check if uncompared end substring of s2 is same as beginning of s1
 	if (s1.length != s2.length) {
 		return false;
 	} else if (s1 == s2) {
