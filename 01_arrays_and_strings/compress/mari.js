@@ -4,6 +4,7 @@
 // smaller than the original string, your method should return the original string.
 
 var MYAPP = {};
+
 MYAPP.runLengthEncode = function(string) {
         var currLetter = string[0],
                 nextLetter = "",
@@ -19,7 +20,7 @@ MYAPP.runLengthEncode = function(string) {
                         letterCount = 0;
                 }
 
-                if(outString.length > string.length) {
+                if(MYAPP.isLonger(outString, string)) {
                         return string;
                 }
 
@@ -29,9 +30,14 @@ MYAPP.runLengthEncode = function(string) {
 
         outString += currLetter + letterCount;
 
-        if(outString.length > string.length) {
+        if(MYAPP.isLonger(outString, string)) {
                 return string;
         }
        
         return outString;
+}
+
+// Returns a boolean if string1 is longer than string2
+MYAPP.isLonger = function(string1, string2) {
+        return string1.length > string2.length;
 }
