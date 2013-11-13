@@ -11,10 +11,6 @@ MYAPP.runLengthEncode = function(string) {
                 letterCount = 0;
  
         for(var i = 0, len = string.length; i < len; i++) {
-                
-                if(outString.length > string.length) {
-                        return string;
-                }
 
                 nextLetter = string[i];
                 if(currLetter != nextLetter) {
@@ -22,10 +18,20 @@ MYAPP.runLengthEncode = function(string) {
                         currLetter = nextLetter;
                         letterCount = 0;
                 }
+
+                if(outString.length > string.length) {
+                        return string;
+                }
+
+
                 letterCount++;
         }
-       
+
         outString += currLetter + letterCount;
+
+        if(outString.length > string.length) {
+                return string;
+        }
        
         return outString;
 }
