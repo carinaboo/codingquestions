@@ -47,9 +47,9 @@ int main(void) {
     reverse(mystery);
     
     printf("reversed strings:\n");
-    printf("'%s'\n", empty);
-    printf("'%s'\n", one);
-    printf("'%s'\n", hello);
-    printf("'%s'\n", boo);
-    printf("'%s'\n", mystery);
+    printf("'%s'\n", empty); // ""
+    printf("'%s'\n", one); // "1"
+    printf("'%s'\n", hello); // "hello"
+    printf("'%s'\n", boo); // "carina boo"
+    printf("'%s'\n", mystery); // "paulina is so cool"
 }
