@@ -4,7 +4,7 @@
 
 var isSubstring = function(s1, s2) {
 // checks if s1 is a substring of s2
-// e.g. s1=box is a substring of s2=mailbox
+// e.g. box is a substring of mailbox
 	return s2.indexOf(s1) !== -1;
 }
 
@@ -16,9 +16,9 @@ var isRotation = function(s1, s2) {
 	} else if (s1 == s2) {
 		return true;
 	} else {
-		for (var i = 0, length = s1.length; i < length; i++) {
+		for (var i = s1.length; i > 0; i++) {
 			if (s1.charAt(i) == s2.charAt(0)) {
-				
+				// not done
 			}
 		}
 		return false;
