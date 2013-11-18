@@ -10,7 +10,7 @@ and O(1) space complexity.
 MYAPP.findNthLast = function(head, n) {
 	var farPointer = closePointer = head;
 
-	for(int i = 0; i < n; i++) {
+	for(int i = 0; i < n - 1; i++) {
 		farPointer = farPointer.next;
 	}
 
