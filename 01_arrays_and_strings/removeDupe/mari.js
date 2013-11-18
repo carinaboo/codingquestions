@@ -2,7 +2,9 @@ MYAPP = {}
 
 // Removes duplicates in a string 
 MYAPP.removeDupe = function(string) {
-	var tail;
+    var tail,
+        outString,
+        auxArr;
 
 	if(typeof string != "string") {
 		return "Wrong type of input. Expecting String";
@@ -16,23 +18,15 @@ MYAPP.removeDupe = function(string) {
 		return string;
 	}
 
-	tail = 1;
+    outString = "";
+    
+    for(var i = 0, len = string.length; i < len; i++) {
+    	if (string.slice(i, len + 1).indexOf(string[i]) > -1) {
+    		outString += string[i];
+    	}
+    }
 
-	loop1:
-		for(var i = 1, len = string.length; i < len; i++) {
-
-		loop2:
-			for(var j = 0; j < tail; j++) {
-				if(string[j] == string[i]) { //Break if we find duplicate char
-					break loop2;
-				}
-
-				if(j == tail) {
-					string[tail] = string[i];
-					tail++;
-				}
-			}
-			string[tail] = 0;
-		}
-	return string.slice(0, tail);
+    return outString;
 }
+
+MYAPP.removeDupe('aaabbbc');
