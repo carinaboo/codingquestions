@@ -12,11 +12,25 @@ MYAPP.findLoop = function(head) {
 	var rabbit,
 		turtle;
 	turtle = head;
-	rabbit = head.next;
+	rabbit = head;
 
-	while(turtle !== rabbit) {
+	if(head.next == null) {
+		return head;
+	}
+
+	while(rabbit !== null) {
+		
+		if(rabbit === turtle) {
+			break;
+		}
+
 		turtle = turtle.next;
 		rabbit = rabbit.next.next;
+	}
+
+	while(rabbit !=== turtle) {
+		rabbit = rabbit.next;
+		turtle = turtle.next;
 	}
 
 	return rabbit;
